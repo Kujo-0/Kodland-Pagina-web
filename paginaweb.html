@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evangelion EVA Units</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: #e60000;
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+  background: rgba(0,0,0,0.8);
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 10px red);
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255,0,0,0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,0,0,0.7);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+button {
+  background: #e60000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #ff1a1a;
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.9);
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <img class="logo" src="https://static.wikia.nocookie.net/evangelion/images/a/a3/Nerv-logo.jpg/revision/latest?cb=20110215172843&path-prefix=es" alt="NERV logo">
+  <h1> Evangelion Units </h1>
+  <p>Unidades EVA de NERV</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <img src="https://cdnb.artstation.com/p/assets/images/images/045/474/797/large/komegatze-eva-01-promo-done.jpg?1642791830">
+    <div class="card-content">
+      <h2>EVA Unit-01</h2>
+      <p>Unidad piloto de Shinji, con gran poder berserk.</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://static.wikia.nocookie.net/neongenesisevangelion/images/7/7b/OP_C053_eva02.jpg/revision/latest?cb=20130903053103&path-prefix=pt-br">
+    <div class="card-content">
+      <h2>EVA Unit-02</h2>
+      <p>Unidad de Asuka, especializada en combate.</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/33/f6/f6/33f6f6926f056565178d90eedad4d74b.jpg">
+    <div class="card-content">
+      <h2>EVA Unit-00</h2>
+      <p>Unidad prototipo pilotada por Rei.</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://static.wikia.nocookie.net/evangelion/images/6/6b/Eva03.jpg/revision/latest?cb=20110405125559&path-prefix=es">
+    <div class="card-content">
+      <h2>EVA Unit-03</h2>
+      <p>Unidad infectada por un Ángel.</p>
+      
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Proyecto inspirado en Evangelion</p>
+</footer>
+
+<script>
+function mostrarInfo(texto) {
+  alert(texto);
+}
+</script>
+
+</body>
+</html>
