@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cuadrito1">CUADRITO1</div>
+    <div class="cuadrito2">CUADRITO2</div>
+
+    <!-- Widget del clima -->
+    <h2>Clima</h2>
+
+    <a class="weatherwidget-io" 
+       href="https://forecast7.com/es/n38d42n63d62/argentina/" 
+       data-label_1="ARGENTINA" 
+       data-label_2="WEATHER" 
+       data-theme="original">
+       ARGENTINA WEATHER
+    </a>
+
+    <script>
+    !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){
+            js=d.createElement(s);
+            js.id=id;
+            js.src='https://weatherwidget.io/js/widget.min.js';
+            fjs.parentNode.insertBefore(js,fjs);
+        }
+    }(document,'script','weatherwidget-io-js');
+    </script>
+
+</body>
+</html>
