@@ -1,0 +1,50 @@
+.cuadrito1{
+    width: 200px;
+    height: 200px;
+    background-color:red;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: cambio_color 5s infinite;
+}
+.cuadrito2{
+    width: 200px;
+    height: 200px;
+    background-color:rgb(60, 255, 0);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: cambio_color_fondo 5s infinite;
+    animation: cambio_estilo_fuente 1s infinite;
+}
+
+@keyframes cambio_color{
+    0%{color:blue;}
+    50%{color:purple;}
+    100%{color:aqua;}
+}
+
+@keyframes cambio_color_fondo{
+    0%{  background-color:blue;}
+    50%{ background-color:blueviolet;}
+    100%{background-color:aqua;}
+}
+
+@keyframes cambio_estilo_fuente{
+    0%{  font-family:'Courier New', Courier, monospace}
+    50%{  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+    100%{ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif}
+}
+
+@keyframes rebotar {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+
+@keyframes rotar {
+  0%   { transform:rotate(15deg);}
+  50%  { transform: rotate(0deg);}
+  100% { transform: rotate(15deg);}
+}
